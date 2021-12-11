@@ -25,6 +25,6 @@ This is a simple script to show the basic creation of a screen with pygame.
 
 ### Sprite.py
 
-In this script we show how to draw a image that is store in images called burgercito and show how to centered
+In this script we show how to draw a image that is store in images called burgercito and show how to center it.
 
 ![burgercito](./images/burgercito.png)
