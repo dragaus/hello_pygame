@@ -21,4 +21,4 @@ Like always we star with a simple but usefull hello world in this file.
 
 ### HelloPygame.py
 
-This is a simple script to show the basic creation of a screen with pygame
+This is a simple script to show the basic creation of a screen with pygame.
