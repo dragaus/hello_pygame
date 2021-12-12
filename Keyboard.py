@@ -21,7 +21,11 @@ game_over = False
 # This variable will hold the position of our sprite
 x, y = (0, 0)
 
+clock = pygame.time.Clock()
+
 while not game_over:
+    dt = clock.tick(60)
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game_over = True
@@ -31,18 +35,22 @@ while not game_over:
 
     # This logical statement will determine what direction we will move our sprite
     if pressed[K_UP]:
-        y -= 0.5
+        y -= 0.5 * dt
     if pressed[K_DOWN]:
-        y += 0.5
+        y += 0.5 * dt
     if pressed[K_LEFT]:
-        x -= 0.5
+        x -= 0.5 * dt
     if pressed[K_RIGHT]:
-        x += 0.5
-        
+        x += 0.5 * dt
+    if pressed[K_SPACE]:
+        x, y = (0, 0)
+
+    screen.fill((126, 230, 242))
     # Renders the sprite
     screen.blit(sprite1, (x, y))
 
     # Refresh the screen to make visible the sprite
     pygame.display.update()
+
 
 pygame.quit()
