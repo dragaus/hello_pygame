@@ -8,7 +8,7 @@ sprite1 = pygame.image.load("./images/burgercito.png")
 
 # Create a screen
 screen = pygame.display.set_mode((640, 480), 0, 32)
-pygame.display.set_caption("Hello Pygame")
+pygame.display.set_caption("Hello Burgercito")
 screen.fill((0, 0, 0))
 
 game_over = False

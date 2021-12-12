@@ -28,3 +28,9 @@ This is a simple script to show the basic creation of a screen with pygame.
 In this script we show how to draw a image that is store in images called burgercito and show how to center it.
 
 ![burgercito](./images/burgercito.png)
+
+### ResizeSprite.py
+
+Here we show how can we resize a sprite to make it the size we want it, and keep it centered programaticly
+
+![jochito](./images/miniJochito.png)
